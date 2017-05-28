@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width">
     <title>League of Legends Calculator</title>
 	<link href="css.css" type="text/css" rel="stylesheet" />	
-	<script type="text/javascript" src="7.10.1/data/en_US/champion.json"></script> 
 	<style type="text/css">
 		@font-face { 
 			font-family: "LeagueFont";
@@ -84,14 +83,7 @@
 		<legend align=center>Hello 2</legend>
 	</fieldset>
   </body>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>
-		function test(x) {
-	$.getJSON(x + '.json', function(data) {
-		console.log("Heck");
-		console.log(x);
-	});
-	}
 	function toId(text) {
 		if (!text) return '';
 		if (text.id) text = text.id;
@@ -116,7 +108,6 @@
 	}
 
 	function summonerLookUp() {
-		test(champName);
 		var x = document.getElementById("champname"), y = x.elements["name"].value, z = toId(y);
 		document.getElementById("image").src = "7.10.1/img/champion/" + z + ".png";
 		var champName = championNameCapitalization(z);
