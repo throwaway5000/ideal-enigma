@@ -116,12 +116,12 @@
 	}
 
 	function summonerLookUp() {
-		    var x = document.getElementById("champname"), y = x.elements["name"].value, z = toId(y);
-			document.getElementById("image").src = "7.10.1/img/champion/" + z + ".png";
-			var champName = championNameCapitalization(z);
-			test(champName);
-			document.getElementById("championName").innerHTML = heckyes.data[champName].name;
-			document.getElementById("championTitle").innerHTML = heckyes.data[champName].title;
+		test(champName);
+		var x = document.getElementById("champname"), y = x.elements["name"].value, z = toId(y);
+		document.getElementById("image").src = "7.10.1/img/champion/" + z + ".png";
+		var champName = championNameCapitalization(z);
+		document.getElementById("championName").innerHTML = heckyes.data[champName].name;
+		document.getElementById("championTitle").innerHTML = heckyes.data[champName].title;
 	}
 	</script>
 </html>
